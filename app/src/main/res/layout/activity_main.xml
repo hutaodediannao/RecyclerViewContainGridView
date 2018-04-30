@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title="生活记事本"
+        app:navigationIcon="@android:drawable/sym_action_chat"
+        android:background="@android:color/holo_red_light"
+        app:titleTextColor="@android:color/white"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="50dp"
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerInside"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="40dp"
+        android:onClick="feedBack"
+        android:src="@drawable/ic_control_point_black_24dp"/>
+
+</FrameLayout>

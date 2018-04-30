@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_red_light"
+        app:navigationIcon="@android:drawable/sym_action_chat"
+        app:title="生活记事本"
+        app:titleTextColor="@android:color/white" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="57dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入主题："
+            android:minHeight="50dp" />
+
+        <EditText
+            android:id="@+id/etContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:hint="请输入内容："
+            android:minHeight="80dp" />
+
+        <com.hutao.app.imageprivewproject.weight.ImageGroup
+            android:id="@+id/imageGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_red_light"
+            android:onClick="save"
+            android:text="保存" />
+
+    </LinearLayout>
+
+</FrameLayout>
